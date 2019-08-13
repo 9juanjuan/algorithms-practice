@@ -7,10 +7,10 @@ var twoSum = function(nums, target) {
      for (let i=0; i< nums.length; i++){
          let diff = target -nums[i];
            if (nums.includes(diff) && nums.indexOf(diff) !==i) {
-             return [[i], nums.indexOf(diff)]
+             return [i, nums.indexOf(diff)]
           }
      }
  };
 
-//  twoSum([2, 7, 11, 15], 9)
+ console.log( twoSum([2, 7, 11, 15], 9))
 // Output [0,1] 
