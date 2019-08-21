@@ -133,3 +133,8 @@ ll.insertLast(400);
 // ll.removeAt(2);
 ll.printListData();
 // ll.getAt(10); 
+
+const tax = [0 , 1]
+console.log(tax);
+tax.push(1)
+console.log(tax);
