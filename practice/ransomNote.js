@@ -10,8 +10,11 @@ const magazine =
     }
 
     // iterate through notes and see if note exists in magazine. 
+    for (word in magazineTable) {
+        console.log(word+ " appears : " + magazineTable[word]);
+    }
 
-    console.log(magazineTable)
+
     for (word of splitNotes) {
         // false if it doesn't exist
         if (!magazineTable[word]) {

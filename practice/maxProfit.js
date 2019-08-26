@@ -14,7 +14,7 @@ function maxProfit(prices) {
         const sellPrice = prices[index];
 
         if (minBuyPrice > sellPrice) {
-            tempBuyPrice = prices[index];
+            tempBuyPrice = sellPrice;
         } else {
             const profit = sellPrice - minBuyPrice;
             if (profit > maxProfit) {
@@ -28,4 +28,4 @@ function maxProfit(prices) {
     return [minBuyPrice, maxSellPrice];
 }
 
-console.log(maxProfit([1,2,3,4,5]))
+console.log(maxProfit([2, 10, 5, 1, 3]))
