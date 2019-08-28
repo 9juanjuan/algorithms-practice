@@ -1,7 +1,7 @@
 // Given an array of stock prices, find the minimum buy price and the maximum sell price that produce the greatest profit.
 
 function maxProfit(prices) {
-    // determine what the base min buy price is 
+    // determine what the0 base min buy price is 
     let minBuyPrice = prices[0] < prices[1] ? prices[0] : prices[1];
     // determine what the base max sell price is 
     let maxSellPrice = prices[0] < prices[1] ? prices[1] : prices[2];
